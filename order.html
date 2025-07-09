@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MakeOrder
+        </title>
+    </head>
+    <body>
+        <form>
+        <label for="postcode">PostCode:</label>
+        <input type ="text"
+        name="postcode"
+        placeholder="Enter your postcode"
+        size="20"
+        maxlength="10">
+        <br><br>
+
+        <label for ="city">City:</label>
+        <input type="text"
+        name="city"
+        placeholder="Enter your city"
+        size="30"
+        maxlength="50">
+        <br>
+        <br>
+
+        <p>Choose your Payment method:</p>
+        <select name="Card"
+        id="Card">
+            
+        <option value ="creditcard">Credit Card </option>
+        <option value ="PayPal">PayPal </option>
+        <option value ="BankTransfer">BankTransfer </option>
+        <option value ="CashonDelivery">CashonDelivery </option>
+        <option value ="Cryptocurrency">Cryptocurrency </option>
+        
+        
+        <label for ="Payment">Payment :</label>
+        <br>  
+        <input type ="number"
+        name="Payment"
+        placeholder="Payment"
+            size ="30px"
+            maxlength="20"
+            id = "Payment"
+            required><br><br>
+            
+            
+        
+            
+
+        </select><br><br>
+
+    <select name ="shipping" id="shipping">
+
+        <option 
+        value = "Free Super Save Shipping">
+        Free Super Save Shipping
+    </option>
+        <option 
+        value ="Two Day Shipping">
+    Two Day Shipping</option>
+    <option value="One Day Shipping">
+        One Day Shipping
+    </option>
+</select><br><br>
+
+
+<label for ="comments">Comments</label>
+<textarea name ="comments"
+id="comments"
+rows="4"
+cols="30"></textarea><br><br>
+
+<label for="emailupdate">Sign me up for emails</label>
+<input type="checkbox"
+id="emailupdate"
+name="emailupdate"
+checked="checked"><br><br>
+
+<label for="emailupdate">Securly save my Payment details</label>
+<input type="checkbox"
+id="emailupdate"
+name="emailupdate"
+checked="checked"><br><br>
+
+</form>
+
+<a href="payment.html">
+    <button>Payment Done</button>
+</a><br><br>
+
+</body></html>
+
