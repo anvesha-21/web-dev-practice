@@ -1,0 +1,14 @@
+/* External CSS */
+body {
+  max-height: max-content;
+}
+
+h1 {
+  color: #c71585;
+}
+
+p {
+  color: #333333;
+  line-height: 1.5;
+}
+
