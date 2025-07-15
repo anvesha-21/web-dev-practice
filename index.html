@@ -1,72 +1,79 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            CSS
-        </title>
-    
-         <!-- Internal CSS -->
-           <style>
-             
-              body {
-                background-color: black;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
 
-              }
-              h1{
-                background-color: burlywood;
-                text-align: center;
-                text-decoration: dotted;
-                text-decoration-line: underline;
-
-              }
-              p {
-                text-align: center;
-                background-color:paleturquoise;
-                border-block-start-color: blue;
-                border-style: dashed;
-                text-decoration-line:underline;
-              }
-
-           </style>
-
-           <link rel="stylesheet" type="text/css" href="style.css">
-
-    </head>
-    <body>
-        
-        <!-- Inline Css -->
-
-        <h1 style="text-align: left; text-decoration: double;;font-style: italic;">
-            Inline Css
-        </h1>
-        <p style="border-style: double; text-align: center; text-decoration-color: cadetblue; background-color : cornsilk;font-feature-settings:abvf;">
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nisi quaerat, reprehenderit odio est laudantium! Error nihil molestiae ad, minima laudantium totam sapiente corrupti velit dignissimos corporis, facere, a id.
-
-        </p>
-
-        <!-- Internal CSS -->
-          
          
+           a.link{
+            color: yellow;
+           }
+           a:hover{
+            font-size: 2em;
+           }
+           div.blue a:link{
+            color: rgb(255, 58, 91);
+           }
+           div.green a:link{
+            color: rgb(255, 58, 91);
+           }
 
-        <h1>
-            Internal Css
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aspernatur illo assumenda quidem quam dolores quaerat quas! Possimus placeat quas incidunt unde eius saepe quis vitae odit. Voluptatem, labore doloremque!
-        </p>
-
-
-      <!-- External CSS -->
+        .blue{
+            color: blue;
+            background-color: lightblue;
+            height: 100px;
+            width: auto;
+            text-decoration: double;
+            text-size-adjust: 20px;
+           text-align: center;
+           background: radial-gradient(circle,rgb(64, 191, 39)20%, rgb(218, 29, 218)70%);
+        }
+        .red{
+            color: red;
+            background-color: rgb(251, 123, 123);
+            height: 100px;
+            width: auto;
+            text-decoration: double;
+            text-size-adjust: 20px;
+            text-align: center;
+            background: radial-gradient(circle,rgb(191, 158, 39)20%, rgba(29, 45, 218, 0.763)70%);
+        }
+        .green{
+            color: green;
+            background-color: rgb(128, 247, 128);
+            height: 100px;
+            width: auto;
+            text-decoration: double;
+            text-size-adjust: 20px;
+            text-align: center;
+            background: radial-gradient(circle,rgba(28, 219, 252, 0)20%, rgb(218, 29, 218)70%);
+        }
         
-        <h1>
-            External CSS
-        </h1>
-        <p>
-            Lorem ipsum, dolor sit amet <span style="color : red">consectetur</span> adipisicing elit. Sed praesentium nisi magnam, aliquam a unde soluta saepe in repellat, nesciunt illo? Repellat sunt laborum atque nobis possimus eos numquam omnis.
-        </p>
-        
 
-    </body>
+        
+    </style>
+</head>
+<body>
+    <div class="blue">
+       <p>Facebook</p>
+       <a href="https://www.facebook.com/">Visit</a>
+     
+       
+    </div>
+    <div class="red">
+       <p>Amazon</p> 
+        <a href="https://www.amazon.in/?&tag=googinhydr1-21&ref=pd_sl_8lvvl5pp8a_e&adgrpid=171770161190&hvpone=&hvptwo=&hvadid=714840681071&hvpos=&hvnetw=g&hvrand=8888717022129004950&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062225&hvtargid=kwd-3704926535&hydadcr=18657_2389208&mcid=a684625856e53b7aba1406fdfbcd950e&gad_source=1">Visit</a>
+     
+    </div>
+    <div class="green">
+     <p>   Myntra</p>
+        <a href="https://www.myntra.com/?utm_source=gh_ht&utm_medium=ht_rev&utm_campaign=gh_ht_listicle50_12&gad_source=1&gad_campaignid=22708550811&gbraid=0AAAAA_ALk7rpXj3Jtv4Et-0T9j8stqrrs&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeDpt03vjEzkpGQPG5l6_8bH4k5B1HFdapAnmgzB1AwQjiYH4vNZU1kaAtZuEALw_wcB">Visit</a>
+    
+       
+    </div>
+    
+</body>
 </html>
 
