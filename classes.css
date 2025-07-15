@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(251, 135, 135);
+    text-align: center;
+    height: max-content;
+}
+
+h1{
+    background-color: blueviolet;
+    color: black;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+     height: max-content;
+}
+
+.blue{
+    font-style: italic;
+    background-color: blue;
+    color: rgb(4, 190, 207);
+     height: max-content;
+}
+#id1{
+    font-style: bold;
+    background-color: rgb(4, 190, 207);
+    color: blue;
+}
+
+.green{
+    font-style: italic;
+    background-color: rgb(4, 190, 207);
+    color: black;
+}
+#green1{
+    font-style: bold;
+    background-color: black;
+    color: rgb(4, 190, 207);
+}
