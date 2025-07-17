@@ -1,0 +1,37 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+.columns{
+    /* column-count: 4;
+    column-width: 250px; */
+    columns:4 250px;
+    column-rule:3px solid rgb(40, 40, 0);
+    column-gap: 3rem;
+}
+.columns p{
+    margin-top: 0;
+
+}
+.columns h2{
+    margin-top: 0;
+    background-color: rgb(62, 62, 62);
+    color: pink;
+    padding:1rem ;
+    break-inside: avoid;
+    break-before: column;
+
+}
+.quotes{
+    font-style: italic;
+    color: rgb(73, 0, 0);
+    margin: 2rem 0;
+    text-align: center;
+    break-inside: avoid;
+    font-size: 2rem;
+    margin-top: 3rem;
+    column-span: all;
+}
+.nowrap{
+    white-space: nowrap;
+}
