@@ -33,7 +33,7 @@ body{
     font-family: "Nunito Sens" , sans-serif;
     min-height:110vh ;
     /* background-color: aliceblue; */
-    background-image: url(1.bubbles.png),linear-gradient( to top ,rgb(75, 148, 208),white,pink,rgb(204, 68, 68));
+    background-image: "1.bubbles.png",linear-gradient( to top ,rgb(75, 148, 208),white,pink,rgb(204, 68, 68));
     /* background-repeat: repeat-y,no-repeat; */
     /* background-position: right center; */
     background-size: 20%,auto;
@@ -41,7 +41,7 @@ body{
 
 .container{
     background-color: aquamarine;
-    background-image: url('6.scenic.png');
+    background-image: "6.scenic.png";
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,7 +116,7 @@ body{
     font-weight: 800;
     font-size: 10rem;
     text-align: center;
-    background-image: url(6.scenic.png);
+    background-image: "6.scenic.png";
     background-size: 100%;
     text-transform: uppercase;
     background-repeat: repeat;
