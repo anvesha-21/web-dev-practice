@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS:Variable</title>
-    <link rel="stylesheet" href="DAY16/ssvariable.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio_Assignment</title>
+  <link rel="stylesheet" href="Portfolio_Assignment/style.css" />
+  
 </head>
 <body>
-    <header>
-        <h1>Header</h1>
-        <nav><h2>Nav</h2></nav>
-    </header>
-    <main>
-        <div class="square">
-            <p>
-                Hello
-            </p>
-        </div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square square--Highlight">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-        <div class="square">📸</div>
-    </main>
-    <footer>
-        <H2>Footer</H2> 
-    </footer>
+  
+
+  <header>
+    
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <span><img src="Portfolio_Assignment/img/profile-800x800.png"
+     alt="Anvesha Chaturvedi👩🏻‍💻">
+    <div class="home-a">
+      </span>
+      <h2><span class="spn">Hi, I’m Anvesha 👋</span></h2>
+      <p><span class="spn">    “A beginner web
+    developer. I love to learn and create websites.”</span>
+</p>
+      
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    
+    <div class="about-a">
+      <h1 class="h1">About Me...</h1>
+      <p class="p">
+          Hi! I’m Anvesha, a 💻 BCA student & budding Web Developer.
+          I love creating responsive, clean & creative websites 💻💖using HTML, CSS, & more.
+          Always curious, always coding — learning something new every day! ✨💡</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>📧 Email:<a href="google.com"> anvesha@example.com</a></li>
+      <li>📱Phone: <a href="12345 67890">+91 12345 67890</a> </li>
+      <li><a href="https://www.linkedin.com/in/anvesha-chaturvedi-aa4327346/">💼 LinkedIn</a></li>
+      <li><a href="https://github.com/anvesha-21">💻Github</a></li>
+    </ul>
+  </section>
+
+
+  <section id="skills" class="skills">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="skill-a">💡 Show My Skills</label>
+
+    <div class="skills-box">
+      <div class="skill">💻 HTML</div>
+      <div class="skill">🎨 CSS</div>
+      <div class="skill">🧱BootStrap</div>
+      <div class="skill">📐Python</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 | Made with ❤ by Anvesha Chaturvedi
+  </footer>
+  
+
 </body>
 </html>
