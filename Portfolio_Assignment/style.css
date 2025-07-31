@@ -155,7 +155,7 @@ header {
   font-size: 20px;
   background-color: antiquewhite;
 }
-#toggle {
+#cb {
   display: none;
 }
 .skills-box {
@@ -166,7 +166,7 @@ header {
   justify-content: center;
   cursor: pointer;
 }
-#toggle:checked + .skill-a + .skills-box {
+#cb:checked + .skill-a + .skills-box {
   display: grid;
 }
 .skill{
