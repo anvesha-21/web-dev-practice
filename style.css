@@ -1,14 +1,22 @@
-/* External CSS */
-body {
-  max-height: max-content;
-}
+/* .bg-dark-transparent{
+    background-color: rgba(0, 0, 0, 0.5)
+!important
 
-h1 {
-  color: #c71585;
-}
+}  */
+  .slide-in-text {
+      display: inline-block;
+      position: relative;
+      animation: slideIn 2s ease-out forwards; 
+    }
 
-p {
-  color: #333333;
-  line-height: 1.5;
-}
+    @keyframes slideIn {
+      from { 
+        transform: translateX(100%); 
+        opacity: 0; 
+      }
+      to { 
+        transform: translateX(0); 
+        opacity: 1; 
+      }
+    }
 
