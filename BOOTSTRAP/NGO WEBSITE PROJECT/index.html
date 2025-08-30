@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake Up Foundation - NGO </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP ICONS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+      <!-- STYLE CSS -->
+    <style>
+         .body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar-custom {
+            background: linear-gradient(to right, #87CEEB, #1e3c72);
+        }
+
+
+        .animate-text-right-5s{
+    animation: animateText 5s ease ;
+}
+
+        
+        @keyframes animateText{
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        
+        .home-section {
+            background: linear-gradient(to bottom, #87CEEB, #1e3c72);
+            color: white;
+            padding: 100px 0;
+        }
+      
+
+        .carousel-item img{
+            height: 100vh;
+            width: 100vh;
+            object-fit: cover;
+        }
+
+       .carousel-caption{
+           bottom: -30%;
+       }
+        
+        .section-padding {
+            padding: 60px 0;
+        }
+        
+        .donate-section {
+            background: linear-gradient(to right, #1e3c72, #87CEEB);
+            color: white;
+        }
+        
+        .qr-code {
+            max-width: 250px;
+            max-height: 250px;
+            border: 3px solid #1e3c72;
+            border-radius: 10px;
+            padding: 10px;
+            background: white;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(to right, #87CEEB, #1e3c72);
+            border: none;
+            color: white;
+            border-radius: 25px;
+        }
+        
+        .btn-custom:hover {
+            background: linear-gradient(to right, #1e3c72, #87CEEB);
+            color: white;
+        }
+    </style>
+    
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top ">
+        <div class="container">
+            <a class="navbar-brand fw-bold animate-text-right-5s" href="#home">
+                <i class="bi bi-heart-fill text-warning me-2"></i>
+                Wake Up Welfare Foundation
+            </a>
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="bi bi-house me-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="bi bi-info-circle me-2"></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs"><i class="bi bi-journal-text me-2"></i>Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery"><i class="bi bi-images me-2"></i>Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="bi bi-chat-dots me-2"></i>Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#join"><i class="bi bi-people me-2"></i>Join Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#donate"><i class="bi bi-cash-coin me-2"></i>Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE-->
+  <section id="home" class="vh-100 d-flex align-items-center justify-content-center ">
+  <div id="homeCarousel" class="carousel slide w-100 shadow-lg rounded " data-bs-ride="carousel">
+    <div class="carousel-inner rounded ">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1692269725887-51e67bf1bed0?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="d-block w-100"  
+        alt="Children Education">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 ">
+          <h2 class="font-monospace px-3 py-2 ">We Care for Children</h2>
+          <p class=" font-monospace px-3 py-1 ">Providing education and support for kids.</p>
+          <a href="#about" class=" font-monospace btn btn-warning mt-2">Explore More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1318617341/photo/low-angle-view-group-of-volunteers-busy-working-by-arranging-vegetables-and-clothes-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=BpJcZ42YnsP6KZmsdmEsArWBECDspsljlPfINuZ0l_U=" 
+        class="d-block w-100" 
+        alt="Healthcare">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h2 class="font-monospace px-3 py-2 ">Healthcare Programs</h2>
+          <p class="font-monospace text-dark fw-bold py-1 ">Ensuring better health for every family through free medical camps and wellness programs.</p>
+          <a href="#programs" class=" font-monospace btn btn-warning mt-2">Our Programs</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1630068846062-3ffe78aa5049?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         class="d-block w-100" 
+         alt="Join Us">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h2 class="font-monospace px-3 py-2">Join Our Mission</h2>
+          <p  class="font-monospace py-1 ">Be a part of change and support our initiatives.</p>
+          <a href="#join" class=" font-monospace btn btn-warning mt-2">Join Us</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" 
+    type="button" 
+    data-bs-target="#homeCarousel" 
+    data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" 
+    type="button" 
+    data-bs-target="#homeCarousel" 
+    data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+    <div class="carousel-indicators">
+      <button type="button" 
+      data-bs-target="#homeCarousel" 
+      data-bs-slide-to="0" 
+      class="active">
+    </button>
+      <button type="button" 
+      data-bs-target="#homeCarousel" 
+      data-bs-slide-to="1">
+    </button>
+      <button type="button" 
+      data-bs-target="#homeCarousel" 
+      data-bs-slide-to="2">
+    </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ABOUT US -->
+    <section id="about" class=" d-flex mb-5">
+        <div class="container">
+            <h2 class=" mb-5 text-primary fs-1 font-monospace justify-content-start align-items-start mt-5">About Us!</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-danger fs-2 justify-content-end align-items-end">Our Story</h3>
+                    <div class="card-body bg-light">
+                   <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, quia. Fuga, sit? Ab iste porro temporibus repellat quasi, mollitia autem unde voluptate. Similique est explicabo voluptas voluptatibus fuga neque accusantium.
+                    Numquam facere quod accusamus exercitationem! Beatae dignissimos vel numquam mollitia! Obcaecati maiores dolor excepturi dicta incidunt. Amet, qui quae ducimus explicabo eveniet omnis labore repellat placeat architecto earum quaerat eos!</p>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam adipisci blanditiis animi praesentium temporibus labore ea, quam autem fugiat ratione suscipit unde doloremque commodi accusantium aperiam sit dolorem omnis distinctio.
+                   Sit ad molestiae voluptatem totam qui eaque eius, facilis aliquid voluptates, id doloribus illo commodi iusto laborum architecto rem vero quas assumenda excepturi, necessitatibus harum. Odio impedit nostrum hic! Dicta.
+                   Magni et laudantium molestiae optio, esse tempore nobis eius cum repellendus molestias veniam. Iure voluptatibus autem nulla? Aliquam officia cum porro ut vitae aspernatur cumque dolor nam odio. Consectetur, ab </p>
+                 
+                </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-info mb-5">Our Impact</h3>
+                    <div class="row text-center">
+                        <div class="col-6 mb-3 card-body bg-transparent">
+                            <h4 class="text-primary">1,200+</h4>
+                            <p class="small">Students Educated</p>
+                        </div>
+                        <div class="col-6 mb-3 card-body bg-light">
+                            <h4 class="text-success">3,500+</h4>
+                            <p class="small">Medical Treatments</p>
+                        </div>
+                        <div class="col-6 mb-3 card-body bg-light">
+                            <h4 class="text-warning">800+</h4>
+                            <p class="small">Families Supported</p>
+                        </div>
+                        <div class="col-6 mb-3 card-body bg-transparent">
+                            <h4 class="text-info">25+</h4>
+                            <p class="small">Communities Served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PTOGRAMS-->
+    <section id="programs" class="bg-light ">
+        <div class="container">
+            <h2 class="text-center  mt-5 mb-5 text-primary ">Our Programs</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book-fill display-3 text-primary mb-3"></i>
+                            <h5 class="card-title">Education Programs</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequuntur fugit vel dolores illum voluptatum nihil ea maxime amet debitis eaque temporibus quisquam id libero ipsam mollitia, doloribus dignissimos quasi?
+                            Ullam veritatis perferendis recusandae dolor labore reprehenderit atque quas nihil, ducimus voluptas earum natus debitis tempora impedit, iste, aut nisi suscipit! Iste minus modi veritatis dolores iusto tempora, assumenda natus.</p>
+                            <ul class="list-unstyled small">
+                                <li>•Digital literacy programs </li>
+                                <li>•Scholarship programs</li>
+                                <li>•Teacher training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-heart-pulse-fill display-3 text-danger mb-3"></i>
+                            <h5 class="card-title">Healthcare Services</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo omnis beatae minus, nulla maiores voluptatibus! Eaque adipisci dicta consequatur iure? Possimus nihil rem cupiditate enim maxime architecto voluptate ipsa assumenda.
+                            Adipisci provident aspernatur excepturi, fuga nulla fugit quidem praesentium omnis unde ratione ipsa pariatur eaque error exercitationem repudiandae, rerum dolor veniam illo eum possimus aliquam facilis corporis nostrum! Voluptas, consequatur.</p>
+                            <ul class="list-unstyled small">
+                                <li>• Monthly medical camps</li>
+                                <li>• Vaccination drives</li>
+                                <li>• Health awareness programs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people-fill display-3 text-success mb-3"></i>
+                            <h5 class="card-title">Community Development</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, consequatur accusantium ullam esse beatae corrupti voluptate id rerum, dolorem laudantium libero facilis et? Ad, voluptate velit repudiandae blanditiis libero commodi!
+                            Nobis est tenetur vitae. Sunt, corporis quia odit omnis veritatis molestias distinctio. Voluptates sit veniam velit iure unde blanditiis officia voluptas dolore. Sunt non sit incidunt aliquam inventore itaque quos.</p>
+                            <ul class="list-unstyled small">
+                                <li>• Women empowerment</li>
+                                <li>• Water conservation</li>
+                                <li>• Tree plantation drives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- GALLERY-->
+    <section id="gallery" class="section-padding  mb-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary">Gallery</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                                <img src="https://images.unsplash.com/photo-1593442808882-775dfcd90699?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                 alt="learning"
+                                 style="height: 200px; width: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Education Center</h6>
+                            <p class="card-text small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consequatur odio veniam accusantium, voluptas illo vitae ipsam, odit quo eos similique corporis beatae? Odit, officia impedit harum necessitatibus sed commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                                <img src="https://images.unsplash.com/photo-1680778469819-6137f1093d14?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                 alt="health"
+                                 style="height: 200px; width: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Healthcare Service</h6>
+                            <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus natus, similique non harum cum corporis eos quaerat dolorum aliquam, at id praesentium eveniet vero blanditiis error impedit inventore necessitatibus explicabo?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                       <img src="https://images.unsplash.com/photo-1719154717749-0d05f61a0588?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="women"
+                        style="height: 200px; width: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Women Empowerment</h6>
+                            <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores voluptas totam, numquam, voluptatibus asperiores, explicabo molestias libero iusto laboriosam voluptatem consequatur? A ipsum, asperiores iste suscipit saepe ex ipsam?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                       <img src="https://thepackman.in/wp-content/uploads/2025/06/Siegwerk-Packman-05-06-2025.jpg"
+                        alt="Environment"
+                        style="height: 200px; width: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Environment Program</h6>
+                            <p class="card-text small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima voluptatem et, ea aliquam autem non accusantium deleniti quidem praesentium, vitae sapiente ut recusandae, saepe inventore minus velit numquam iusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <div class="text-center">
+                       <img src="https://images.unsplash.com/photo-1648801098849-565ca6939c56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="awards"
+                         style="height: 200px; width: 400px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Student Awards</h6>
+                            <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nulla quo numquam! Molestiae architecto libero autem inventore harum quos ipsa in esse vitae, quia quas rerum ducimus illum eaque et?
+                           
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US-->
+    <section id="contact" class="section-padding bg-light mb-5 ">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary">Contact Us !</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Get in Touch...</h5>
+                            <p class="mb-3"><i class="bi bi-geo-alt-fill text-primary me-2"></i>123 Golden Street, Mumbai ,Maharashtra - 401107 </p>
+                            <p  class="mb-3"><i class="bi bi-telephone-fill text-success me-2"></i><a href="+91 9876543210">+91 9876543210</a></p>
+                            <p class="mb-3"><i class="bi bi-envelope-fill text-info me-2"><a href="#">info@wakeupfoundation.org</a></i></p>
+                            <p class="mb-3"><i class="bi bi-clock-fill text-warning me-2"></i>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW8s3hSWVtwq3EnZgRngUTewAhhQiyVBW5sA&s"
+                               alt="image"
+                               width="350px"
+                               height="350px"
+                               class="d-block mx-auto">
+                        </div>
+                    </div>
+ 
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-5">Send Message</h5>
+                            <form>
+                                <div class="mb-3"><i class="bi bi-person"></i>
+                                    First Name:<input type="text" class="form-control" placeholder="Your First Name" required>
+                                </div>
+                                <div class="mb-3"><i class="bi bi-person"></i>
+                                   Last Name:<input type="text" class="form-control" placeholder="Your Last Name" required>
+                                </div>
+                                <div class="mb-3"><i class="bi bi-signpost"></i>
+                                   Email: <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3"><i class="bi bi-chat-dots"></i>
+                                    Message:<textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-custom">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN US -->
+
+     <section id="join" class="d-flex flex-column align-items-center justify-content-center text-center p-5 mt-5  mb-5">
+    <div class="container bg-white  rounded p-4 mb-5 mt-5" style="max-width: 600px;">
+      <h2 class="fw-bold mb-3 text-primary display-5">Join Us</h2>
+      <p class="mb-4">Fill out this form to become a part of Wake Up Foundation as a <strong>Volunteer, Partner, or Member</strong>.</p>
+      
+      <form >
+        <div class=" text-start">
+          <label class="form-label fw-semibold"><i class="bi bi-person"></i> First Name</label>
+          <input type="text" class="form-control" placeholder="Enter your First name" required>
+        </div>
+        <div class="mb-3 text-start">
+          <label class="form-label fw-semibold"><i class="bi bi-person"></i> Last Name</label>
+          <input type="text" class="form-control" placeholder="Enter your Last name" required>
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label fw-semibold"><i class="bi bi-envelope"></i> Email</label>
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label fw-semibold"><i class="bi bi-telephone"></i> Phone Number</label>
+          <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label fw-semibold"><i class="bi bi-people"></i> I want to join as</label>
+          <select class="form-select" required>
+            <option value="" disabled selected>Choose an option</option>
+            <option value="volunteer">Volutneer</option>
+            <option value="partner">Partner</option>
+            <option value="member">Member</option>
+          </select>
+        </div>
+
+        <div class="mb-3 text-start">
+          <label class="form-label fw-semibold"><i class="bi bi-chat-dots"></i> Message</label>
+          <textarea class="form-control" rows="3" placeholder="Tell us why you want to join us" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100"><i class="bi bi-send"></i> Submit</button>
+      </form>
+    </div>
+  </section>
+
+    <!-- DONATE-->
+    <section id="donate" class="section-padding donate-section ">
+        <div class="container">
+            <h2 class="text-center mb-5">Make a Donation</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-4">Donation Form</h4>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" placeholder="Donation Amount (₹)" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="upi">UPI (GPay, PhonePe, Paytm)</option>
+                                <option value="netbanking">Net Banking</option>
+                                <option value="card">Debit/Credit Card</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-lg" ><a href="paymentsuccessful.html">Proceed to Payment</a></button>
+                    </form>
+                </div>
+                <div class="col-lg-6 mb-4 text-center">
+                    <h4 class="mb-4">Quick Donation via QR Code</h4>
+                    <div class="qr-code mx-auto mb-3">
+                        <img src="https://png.pngtree.com/png-vector/20220610/ourmid/pngtree-qr-code-icon-vector-illustration-isolated-on-white-background-png-image_4951059.png" 
+                        alt="QrCode"
+                        style="width: 230px;"
+                        height="230px">
+                    </div>
+                    <p><strong>UPI ID:</strong> wakeupfoundation@paytm</p>
+                    <p class="small">Scan with any UPI app to donate instantly</p>
+                    <div class="d-flex justify-content-center gap-2 mb-3">
+                        <span class="badge bg-primary">GPay</span>
+                        <span class="badge bg-success">PhonePe</span>
+                        <span class="badge bg-info">Paytm</span>
+                        <span class="badge bg-warning text-dark">BHIM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DONATION APPLIED IN-->
+            <div class="row mt-5 ">
+                <div class="col-12">
+                    <h4 class="text-center mb-4">Your Donation Impact</h4>
+                    <div class="row text-center">
+                        <div class="col-md-3 mb-3">
+                            <div class="card bg-transparent border-light">
+                                <div class="card-body">
+                                    <h5>₹500</h5>
+                                    <p class="small">School supplies for one child</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="card bg-transparent border-light">
+                                <div class="card-body">
+                                    <h5>₹1,000</h5>
+                                    <p class="small">Medical treatment for 10 patients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="card bg-transparent border-light">
+                                <div class="card-body">
+                                    <h5>₹2,500</h5>
+                                    <p class="small">Women Empowerment Cell</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="card bg-transparent border-light">
+                                <div class="card-body">
+                                    <h5>₹5,000</h5>
+                                    <p class="small">Monthly community Programs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 vh-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <h5><i class="bi bi-heart-fill text-warning me-2"></i>Wake Up Foundation</h5>
+                    <p class="small">Empowering communities through education, healthcare, and sustainable development since 2013.</p>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <h6>Contact Info</h6>
+                    <p class="small mb-1"><i class="bi bi-geo-alt me-1"></i>123 Golden Street , Mumbai , Maharashtra - 401107</p>
+                    <p class="small mb-1"><i class="bi bi-telephone me-1"></i>+91 9876543210</p>
+                    <p class="small mb-1"><i class="bi bi-envelope me-1"></i>info@wakeupfoundation.org</p>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <h6>Quick Links</h6>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="linkedin.com" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <p class="small mt-2">Reg. No: NGO/2020/001234 | 80G Certified</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="small mb-0">&copy; 2024 Wake Up Foundation . Designed By Anvesha Chaturvedi . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- TOOLTIPS -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>
