@@ -1,35 +1,24 @@
-.text-shadow{
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+.card{
+    border: none;
 }
 
-
-.animate-text-right{
-    animation: animateText 1.5s ease ;
-}
-.animate-text-right-3s{
-    animation: animateText 3s ease ;
-}
-.animate-text-right-5s{
-    animation: animateText 5s ease ;
+.card-img-overlay{
+    position: relative;
 }
 
-textarea::placeholder {
-      color: gray;
-      text-align: center; 
-    }
-
-
-
-@keyframes animateText{
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
+#portfolio  .card::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
+
+#portfolio .card:hover::before{
+    content: none;
+}
+
 
 
 
